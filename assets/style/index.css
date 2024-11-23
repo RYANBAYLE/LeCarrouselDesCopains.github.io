@@ -44,6 +44,16 @@ img {
   font-size: 7rem;
   font-family: "milky", serif;
 }
+@media screen and (max-width: 1200px) {
+  .welcome h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .welcome h1 {
+    font-size: 3rem;
+  }
+}
 
 .carroussel {
   position: absolute;
@@ -54,6 +64,11 @@ img {
   margin-top: 10px;
   border-radius: 50%;
   width: 500px;
+}
+@media screen and (max-width: 550px) {
+  .carroussel {
+    width: 300px;
+  }
 }
 .carroussel video {
   position: absolute;
@@ -86,6 +101,11 @@ img {
 }
 .carroussel ul li:first-child {
   padding: 10px 60px 10px 100px;
+}
+@media screen and (max-width: 550px) {
+  .carroussel ul li:first-child {
+    padding: 10px 60px 10px 0;
+  }
 }
 .carroussel ul li:last-child {
   padding: 10px 100px 10px 60px;

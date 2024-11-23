@@ -7,6 +7,14 @@
     text-align: center;
     font-size: 7rem;
     font-family: "milky", serif;
+    @media screen and (max-width: 1200px) {
+        font-size: 5rem;
+        
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 3rem;
+        
+    }
 }
 }
 
@@ -17,8 +25,11 @@
     transform: translateX(-50%);
     margin-top: 10px;
     border-radius: 50%;
-    
     width: 500px;
+    @media screen and (max-width: 550px) {
+        width: 300px;
+        
+    }
     video{
         position: absolute;
         top: 0;
@@ -44,6 +55,10 @@
             padding: 10px 60px;
            &:first-child{
             padding: 10px 60px 10px 100px;
+            @media screen and (max-width: 550px) {
+                padding: 10px 60px 10px 0;
+                
+            }
            }
            &:last-child{
             padding: 10px 100px 10px 60px;
