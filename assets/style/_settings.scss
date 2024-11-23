@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "house";
+    src: url(../fonts/House\ Music.ttf);
+}
+@font-face {
+    font-family: "tarantino";
+    src: url(../fonts/Tarantino-\ PERSONAL\ USE\ ONLY.ttf);
+}
+@font-face {
+    font-family: "milky";
+    src: url(../fonts/MilkyVintage-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    font-family: "house", serif;
+    background: rgb(0, 0, 0);
+  
+}
+li{
+    list-style: none;
+}
+img{
+    height: 300px;
+}

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "house";
+  src: url(../fonts/House\ Music.ttf);
+}
+@font-face {
+  font-family: "tarantino";
+  src: url(../fonts/Tarantino-\ PERSONAL\ USE\ ONLY.ttf);
+}
+@font-face {
+  font-family: "milky";
+  src: url(../fonts/MilkyVintage-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "house", serif;
+  background: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 300px;
+}
+
+.welcome h1 {
+  padding-top: 100px;
+  text-transform: uppercase;
+  color: rgb(154, 119, 12);
+  text-shadow: 0 0 10px #8a3c3c;
+  text-align: center;
+  font-size: 7rem;
+  font-family: "milky", serif;
+}
+
+.carroussel {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 500px;
+}
+.carroussel video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(138, 60, 60, 0.3450980392);
+          box-shadow: 0px 0px 20px 20px rgba(138, 60, 60, 0.3450980392);
+  z-index: -1;
+}
+.carroussel ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  border-radius: 50%;
+}
+.carroussel ul li {
+  scale: 0.7;
+  padding: 10px 60px;
+}
+.carroussel ul li:first-child {
+  padding: 10px 60px 10px 100px;
+}
+.carroussel ul li:last-child {
+  padding: 10px 100px 10px 60px;
+}
+.carroussel ul li img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px 20px #121010;
+          box-shadow: 0 0 20px 20px #121010;
+}
+.carroussel ul li h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(186, 184, 208, 0.532);
+}
+.carroussel ::-webkit-scrollbar {
+  height: 1px;
+  width: 50px;
+  background-color: whitesmoke;
+  visibility: hidden;
+}
+.carroussel ::-webkit-scrollbar-thumb {
+  background: rgb(255, 254, 254);
+  z-index: 1;
+  border-radius: 5px;
+}/*# sourceMappingURL=index.css.map */
